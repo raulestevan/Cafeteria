@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" media="screen" href="css.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" /> 
+    <link rel="stylesheet" href="https://formden.com/static/cdn/font-awesome/4.4.0/css/font-awesome.min.css" />
+    <style>.bootstrap-iso .formden_header h2, .bootstrap-iso .formden_header p, .bootstrap-iso form
+    {font-family: Arial, Helvetica, sans-serif; color: #000000}
+    .bootstrap-iso form button, .bootstrap-iso form button:hover
+    {color: white !important;}
+     .asteriskField
+     {
+         color: red;
+        }
+     </style>
+
+
+    <script src="main.js"></script>
+  
+    <title>World War Café</title>
+    <style> h1 
+          { font-size: 50px;
+          } 
+          h2
+          { font-family: Helvetica, Arial, sans-serif;
+          }
+
+          h3
+          { font-size: 15px;
+            font-style: normal;
+          }
+        
+        </style>
+</head>
+<body class="body">
+        <header>
+            <div class="container">
+          <center> 
+                  <font face="Haettenschweiler"> 
+                  <h1>World War Coffe</h1>
+                </font>
+                                  <div class="topnav" id="myTopnav">
+                          <a href="index.html">Home</a>
+                          <a href="cardapio.html">Cardápio</a>
+                          <a href="Formulariosite.html" class="active">Sugestões</a>
+                          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                          </a>
+                        </div>
+                        <script>
+                          function myFunction() {
+                            var x = document.getElementById("myTopnav");
+                            if (x.className === "topnav") {
+                              x.className += " responsive";
+                            } else {
+                              x.className = "topnav";
+                            }
+                          }
+                          </script>         
+                              
+                                   
+      
+      <br>
+      <a href="cardapio.html"><img src=./imgprosite/logo.png width="250" height="250"><br/> </a></center>
+        
+      </br>
+      </header>
+    </br>
+</br>
+       <div class="container">
+            <div class="bootstrap-iso">
+                    <div class="container-fluid">
+                     <div class="row">
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                       <form method="post">
+                        <div class="form-group ">
+                         <label class="control-label requiredField" for="name">
+                          Nome
+                          <span class="asteriskField">
+                           *
+                          </span>
+                         </label>
+                         <div class="input-group">
+                          <div class="input-group-addon">
+                           <i class="fa fa-smile-o">
+                           </i>
+                          </div>
+                          <input class="form-control" id="name" name="name" placeholder="Digite seu nome completo." type="text"required/>
+                         </div>
+                        </div>
+                        <div class="form-group ">
+                         <label class="control-label requiredField" for="date">
+                          Date
+                          <span class="asteriskField">
+                           *
+                          </span>
+                         </label>
+                         <div class="input-group">
+                          <div class="input-group-addon">
+                           <i class="fa fa-calendar">
+                           </i>
+                          </div>
+                          <input class="form-control" id="date" name="date" placeholder="DD/MM/AAAA" type="text"required/>
+                         </div>
+                        </div>
+                        <div class="form-group ">
+                         <label class="control-label requiredField"required>
+                          Fase vital
+                          <span class="asteriskField">
+                           *
+                          </span>
+                         </label>
+                         <div class=" ">
+                          <div class="checkbox">
+                           <label class="checkbox">
+                            <input name="checkbox" type="radio" value="Crian&ccedil;a"/>
+                            Crian&ccedil;a
+                           </label>
+                          </div>
+                          <div class="checkbox">
+                           <label class="checkbox">
+                            <input name="checkbox" type="radio" value="Adolescente"/>
+                            Adolescente
+                           </label>
+                          </div>
+                          <div class="checkbox">
+                           <label class="checkbox">
+                            <input name="checkbox" type="radio" value="Adulto"/>
+                            Adulto
+                           </label>
+                          </div>
+                          <div class="checkbox">
+                           <label class="checkbox">
+                            <input name="checkbox" type="radio" value="Idoso"/>
+                            Idoso
+                           </label>
+                          </div>
+                          <span class="help-block" id="hint_checkbox"required>
+                                Para termos um gr&aacute;fico sobre as sugest&otilde;es.
+                               </span>
+                         </div>
+                        </div>
+                        <div class="form-group ">
+                         <label class="control-label requiredField" for="email"required>
+                          Email
+                          <span class="asteriskField">
+                           *
+                          </span>
+                         </label>
+                         <div class="input-group">
+                          <div class="input-group-addon">
+                           <i class="fa fa-sitemap">
+                           </i>
+                          </div>
+                          <input class="form-control" id="email" name="email" placeholder="email@algo.com" type="text"required/>
+                         </div>
+                        </div>
+                        <div class="form-group ">
+                         <label class="control-label requiredField" for="message">
+                          Sugest&atilde;o
+                          <span class="asteriskField">
+                           *
+                          </span>
+                         </label>
+                         <textarea class="form-control" cols="40" id="message" name="message" placeholder="Deixe sua sugest&atilde;o." rows="10"required></textarea>
+                        </div>
+                        <div class="form-group ">
+                         <label class="control-label requiredField" for="tel">
+                          Telephone 
+                          <span class="asteriskField">
+                           *
+                          </span>
+                         </label>
+                         <div class="input-group">
+                          <div class="input-group-addon">
+                           <i class="fa fa-phone">
+                           </i>
+                          </div>
+                          <input class="form-control" id="tel" name="tel" pattern="^\(d{2}\)\d{4}.*?$" maxlength="18" placeholder="+XX (XX) XXXX-XXXX" type="text"required/>
+                         </div>
+                        </div>
+                        <div class="form-group">
+                         <div>
+                          <button class="butn" name="submit" input type="submit">
+                            Enviar
+                          </button>
+                          <button class="butn" name="reset" input type="reset">
+                            Redefinir                                       
+                          </button>
+                         </div>
+                        </div>
+                       </form>
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+</div>
+</div>
+</div>
+    <br>
+    <br>
+    
+    <footer>
+            <p>Todos os direitos reservados à <me>World War Coffe Enterprise</me><sup><u>tm</u></sup> </p>
+            <p>Desenvolvedores: Isaac Caldas e Raul Estevan</p> 
+            <p>Endereço: Rua Caminho dos Barreiros n° 93</p> 
+             
+            </footer>
+</body>
+</html>
